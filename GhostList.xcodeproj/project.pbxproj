@@ -12,6 +12,10 @@
 		2DE8867F1C13FB8300D20806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8867D1C13FB8300D20806 /* Main.storyboard */; };
 		2DE886811C13FB8300D20806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE886801C13FB8300D20806 /* Assets.xcassets */; };
 		2DE886841C13FB8300D20806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE886821C13FB8300D20806 /* LaunchScreen.storyboard */; };
+		2DE8868C1C13FC2F00D20806 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8868B1C13FC2F00D20806 /* Task.swift */; };
+		2DE886901C13FE6600D20806 /* ListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8868F1C13FE6600D20806 /* ListAPI.swift */; };
+		2DE886931C13FF0F00D20806 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE886921C13FF0F00D20806 /* PersistencyManager.swift */; };
+		2DE886951C14010F00D20806 /* TaskExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE886941C14010F00D20806 /* TaskExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2DE886801C13FB8300D20806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DE886831C13FB8300D20806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DE886851C13FB8300D20806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE8868B1C13FC2F00D20806 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2DE8868F1C13FE6600D20806 /* ListAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAPI.swift; sourceTree = "<group>"; };
+		2DE886921C13FF0F00D20806 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		2DE886941C14010F00D20806 /* TaskExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				2DE886791C13FB8300D20806 /* AppDelegate.swift */,
-				2DE8867B1C13FB8300D20806 /* ViewController.swift */,
+				2DE8868D1C13FE1000D20806 /* Model */,
+				2DE8868E1C13FE1B00D20806 /* Controller */,
 				2DE8867D1C13FB8300D20806 /* Main.storyboard */,
+				2DE886911C13FE6B00D20806 /* API */,
 				2DE886801C13FB8300D20806 /* Assets.xcassets */,
 				2DE886821C13FB8300D20806 /* LaunchScreen.storyboard */,
 				2DE886851C13FB8300D20806 /* Info.plist */,
 			);
 			path = GhostList;
+			sourceTree = "<group>";
+		};
+		2DE8868D1C13FE1000D20806 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DE8868B1C13FC2F00D20806 /* Task.swift */,
+				2DE886941C14010F00D20806 /* TaskExtensions.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2DE8868E1C13FE1B00D20806 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DE8867B1C13FB8300D20806 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2DE886911C13FE6B00D20806 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2DE8868F1C13FE6600D20806 /* ListAPI.swift */,
+				2DE886921C13FF0F00D20806 /* PersistencyManager.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE886931C13FF0F00D20806 /* PersistencyManager.swift in Sources */,
 				2DE8867C1C13FB8300D20806 /* ViewController.swift in Sources */,
+				2DE886951C14010F00D20806 /* TaskExtensions.swift in Sources */,
+				2DE8868C1C13FC2F00D20806 /* Task.swift in Sources */,
+				2DE886901C13FE6600D20806 /* ListAPI.swift in Sources */,
 				2DE8867A1C13FB8300D20806 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
